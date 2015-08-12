@@ -1,4 +1,4 @@
-# Framework Name • [TodoMVC](http://todomvc.com)
+# Imba • [TodoMVC](http://todomvc.com)
 
 > Official description of the framework (from its website)
 
@@ -27,9 +27,9 @@
 
 ## Implementation
 
-How was the app created? Anything worth sharing about the process of creating the app? Any spec violations?
+
 
 
 ## Credit
 
-Created by [Your Name](http://your-website.com)
+Created by [Sindre Aarsaether](http://github.com/somebee)
