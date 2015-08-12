@@ -2835,9 +2835,16 @@
 		return this._id;
 	};
 	
+	// returns a unique string that will change whenever
+	// anything changes on the todo
+	Todo.prototype.hash = function (){
+		return "" + this._title + this._completed + this._editing;
+	};
+	
 	Todo.prototype.toJSON = function (){
 		return {title: this.title(),completed: this.completed()};
 	};
+	
 	
 	
 	// this way of caching is not the 'Imba way' - it is merely a very simple way
@@ -2850,20 +2857,12 @@
 			// commit is always called when a node is rendered as part of an outer tree
 			// this is where we decide whether to cascade the render through to inner
 			// parts of this.
-			
-			if (this._hash != this.hash()) {
-				this._hash = this.hash();
+			if (this._hash != this.object().hash()) {
+				this._hash = this.object().hash();
 				return this.render();
 			};
 		};
 		
-		
-		// returns a unique string that should have changed if the element does need
-		// to rerender. In which case we will store the hash, so that we can compare
-		// it later when we need to decide again whether the item needs to render
-		tag.prototype.hash = function (){
-			return [this._object._completed,this._object._editing,this._object._title].join("");
-		};
 		
 		tag.prototype.render = function (){
 			var t0;

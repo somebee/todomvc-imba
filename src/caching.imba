@@ -65,8 +65,14 @@ class Todo
 	def id
 		@id
 
+	# returns a unique string that will change whenever
+	# anything changes on the todo
+	def hash
+		"" + @title + @completed + @editing
+
 	def toJSON
 		{title: title, completed: completed}
+
 
 # this way of caching is not the 'Imba way' - it is merely a very simple way
 # to do something similar to React 'shouldComponentUpdate'. You can implement
@@ -78,17 +84,10 @@ tag todo < li
 		# commit is always called when a node is rendered as part of an outer tree
 		# this is where we decide whether to cascade the render through to inner
 		# parts of this.
-
-		if @hash != hash
-			@hash = hash
+		if @hash != object.hash
+			@hash = object.hash
 			render
 
-
-	# returns a unique string that should have changed if the element does need
-	# to rerender. In which case we will store the hash, so that we can compare
-	# it later when we need to decide again whether the item needs to render
-	def hash
-		[@object.@completed, @object.@editing, @object.@title].join("")
 
 	def render
 		var todo = @object
