@@ -1,18 +1,30 @@
-# Imba TodoMVC Example
+# Imba • [TodoMVC](http://todomvc.com)
 
-> Template used for creating [TodoMVC](http://todomvc.com) apps
+> Create complex web apps with ease! Imba is a new programming language for the web that compiles to highly performant and readable JavaScript. It has language level support for defining, extending, subclassing, instantiating and rendering dom nodes.
 
-![](https://github.com/tastejs/todomvc-app-css/raw/master/screenshot.png)
+## Resources
 
-## Getting started
+- [Website](http://imba.io)
+- [Documentation](http://imba.io/guides/language)
+- [Blog](http://imba.io/blog)
 
-- Read the [Application Specification](https://github.com/tastejs/todomvc/blob/master/app-spec.md) before touching the template.
+### Support
 
-- Delete this file and rename `app-readme.md` to `readme.md` and fill it out.
+- [Chat](https://gitter.im/somebee/imba)
+- [GitHub](https://github.com/somebee/imba)
+- [StackOverflow](http://stackoverflow.com/questions/tagged/imba)
+- [Twitter](http://twitter.com/imbajs)
 
-- Clone this repo and install the dependencies with [npm](https://npmjs.com) by running: `npm install`.
+*Let us [know](https://github.com/somebee/todomvc-imba/issues) if you discover anything worth sharing.*
 
+## Running
 
-## License
+Simply open `index.html` in your browser to see it in action!
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" rel="dct:type">work</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://sindresorhus.com" property="cc:attributionName" rel="cc:attributionURL">TasteJS</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US">Creative Commons Attribution 4.0 International License</a>.
+## Development
+
+The source resides in `src/app.imba`. Run `npm run watch` to recompile the source locally. Make sure you have installed Imba through npm: `npm install -g imba` first.
+
+## Credit
+
+Created by [Sindre Aarsaether](http://github.com/somebee)
