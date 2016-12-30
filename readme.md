@@ -24,7 +24,7 @@
 
 ## Development
 
-The source resides in `src/app.imba`. Run `npm run watch` to recompile the source locally. Make sure you have installed Imba through npm: `npm install -g imba` first.
+The source resides in `src/app.imba`. Run `npm run watch` to recompile the source locally.
 
 ## Credit
 

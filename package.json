@@ -1,11 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "build": "imba compile src/ -o js/",
-    "watch": "imba watch src/ -o js/"
+    "build": "imbapack",
+    "watch": "imbapack -w"
   },
   "dependencies": {
-    "imba": "^0.14.2",
+    "imba": "^1.0.0",
     "todomvc-app-css": "^2.0.0",
     "todomvc-common": "^1.0.0"
   }
